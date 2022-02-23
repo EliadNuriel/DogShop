@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/details_dog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:text="Mosho"
+        android:textColor="@color/primary_orange"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_dog_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
+        app:cardCornerRadius="63dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_dog_name">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/add_dog_image"
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/dog_default" />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/add_dog_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_orange"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_dog_card">
+
+        <TextView
+            android:id="@+id/dog_name_details"
+            android:layout_width="match_parent"
+            android:textSize="32sp"
+            android:layout_gravity="top|center"
+            android:paddingVertical="16dp"
+            android:text="Mosho"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dog_breed_tv"
+            android:layout_marginVertical="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dog Breed: German Shephard"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/dog_age_tv"
+            android:layout_marginVertical="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Dog Age : 10"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:layout_marginVertical="4dp"
+            android:id="@+id/dog_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dog Price: 50"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <LinearLayout
+            android:layout_marginVertical="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/dog_vaccine_rg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dog Vaccine State"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/details_vaccine_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vaccinated"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dog_gender_rg"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dog Gender"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/details_dog_gender_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/details_button_back"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

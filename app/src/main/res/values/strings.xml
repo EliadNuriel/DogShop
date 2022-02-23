@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dog_App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name ="about_us">Dogs Shop, Israel’s #1 pet retail store is the largest specialty retailer of services and solutions for the lifetime needs of your pet.
+        Our stores offer a broad range of pet food and products as well as pet training,
+        grooming and even boarding services. We are an online provider of pet products and also guide pet parents with the correct information when it comes to taking care of their furry friends.
+    </string>
+</resources>

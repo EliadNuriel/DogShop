@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:src="@drawable/logo"
+        android:textSize="32sp"
+        android:scaleType="fitXY"
+        android:textAlignment="center"
+        android:id="@+id/title_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/dogs_rv"
+    android:layout_width="match_parent"
+    tools:listitem="@layout/dog_item"
+    app:layout_constraintTop_toBottomOf="@id/title_main"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_height="0dp"
+    />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_new_dog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#FB7F1D"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:foregroundTint="@color/white"
+        app:rippleColor="@color/white"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/about_us_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#FB7F1D"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:foregroundTint="@color/white"
+        app:rippleColor="@color/white"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/ic_outline_info_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

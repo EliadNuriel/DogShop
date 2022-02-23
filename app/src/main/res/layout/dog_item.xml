@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="#393e46"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+<ImageView
+    android:id="@+id/dog_remove_btn"
+    android:layout_width="25dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="25dp"
+    android:src="@drawable/ic_baseline_cancel_24"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_margin="8dp"/>
+    <ImageView
+        android:id="@+id/dog_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dog_default"/>
+
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dog_image_view"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="32dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dog_name_tv"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Mosho"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/dog_breed_tv"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breed: Lavrador"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/showMore_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show More"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primary_orange"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="12dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
