@@ -147,7 +147,14 @@
             android:backgroundTint="@color/white"
             android:layout_height="wrap_content"
             android:text="Add Dog"/>
-
+        <Button
+            android:id="@+id/back_button_add"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
     </LinearLayout>
 
 

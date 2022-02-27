@@ -31,7 +31,7 @@ public class AddDogActivity extends AppCompatActivity  {
     ImageView dogImageView;
     EditText dogNameEt,dogBreedEt,dogAgeEt,dogPriceEt;
     RadioGroup dogVaccineRg,dogGenderRg;
-    Button addButtonSubmit;
+    Button addButtonSubmit,backButton;
 
     String dogImage;
     @Override
@@ -39,6 +39,7 @@ public class AddDogActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_dog);
         dogGenderRg = findViewById(R.id.dog_gender_rg);
+        backButton = findViewById(R.id.back_button_add);
         dogImageView = findViewById(R.id.add_dog_image);
         dogNameEt = findViewById(R.id.dog_name_et);
         dogBreedEt = findViewById(R.id.dog_breed_et);
@@ -49,6 +50,12 @@ public class AddDogActivity extends AppCompatActivity  {
         if(getSupportActionBar()!=null)
         getSupportActionBar().hide();
 
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         dogImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
